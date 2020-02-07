@@ -63,14 +63,14 @@ section.fulll {
   background-size: cover;
   background-position: top left;
   background-repeat: no-repeat;
-  padding-top: 150px
+  padding-top: 50px
 }
 section.fullll {
   background-image: url('../image/green1.jpg');
   background-size: cover;
   background-position: top left;
   background-repeat: no-repeat;
-  padding-top: 50px
+  padding-top: 150px
 }
 
 section .left {
