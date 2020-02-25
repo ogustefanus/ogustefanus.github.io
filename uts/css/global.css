@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 15px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 50px;
+  z-index: 10;
+  color: #0091FF
+}
+
+main {
+  width: 1024px;
+  padding-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav main {
+  padding-top: 15px;
+  text-align: right;
+}
+
+nav main a {
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  font-family: 'Playfair Display', serif;
+  padding-top: 10px;
+  padding-right: 10px;
+  color: #FFCD00;
+}
+
+nav main a:hover {
+  text-decoration: underline;
+  color: #FFFFFF;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+}
+
+section.full {
+  background-image: url('../image/2.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+section.fulll {
+  background-image: url('../image/4.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+section.fullll {
+  background-image: url('../image/5.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+section.fulllll {
+  background-image: url('../image/7.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+section.fullllll {
+  background-image: url('../image/9.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+section .intro {
+  position: absolute;
+  top: 80px;
+  left: 50px;
+  width: 40%;
+  height: 200px;
+ 
+}
+
+/**/
+section .dua {
+  float: right;
+  position: absolute;
+  top: 150px;
+  left: 675px;
+  width: 40%;
+  height: 200px;
+  
+}
+
+
+h1 {
+  text-align: left;
+  font-size: 70px;
+  font-family: 'Playfair Display', serif;
+  color: #FFCD00
+}
+h2 {
+  text-align: left;
+  font-size: 80px;
+  font-family: 'Playfair Display', serif; 
+  color: #FFCD00
+}
+h3 {
+  margin-top: 20px;
+  font-size: 14px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color:#9AC1D9 ;
+}
+h4 {
+  margin-top: 100px;
+  text-align: left;
+  font-size: 80px;
+  font-family: 'Playfair Display', serif;
+  color: #FFCD00;
+}
+
+p {
+  padding-top: 10px;
+  padding-right: 30px;
+  text-align: justify;
+	font-size: 15px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #C3C3C3
+}
+i {
+  font-size: 18px;
+  font-family: 'Playfair Display', serif;
+  color: #9AC1D9
+ }
+ol {
+  padding-top: 10px;
+  padding-right: 30px;
+  text-align: justify;
+  font-size: 15px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #C3C3C3
+}
+li {
+  padding-top: 10px;
+  padding-right: 30px;
+  text-align: justify;
+  font-size: 15px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #C3C3C3
+}
+
+@media only screen and (max-width: 1024px) {
+  #body {
+    width: 100%
+    background-color: #000000; 
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    background-color: #000000; 
+}
