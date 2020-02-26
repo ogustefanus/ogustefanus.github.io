@@ -1,5 +1,6 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,700&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
+
 
 * {
   margin: 0;
@@ -14,7 +15,7 @@ nav {
   width: 100vw;
   height: 50px;
   z-index: 10;
-  color: #EDF263
+  color: #0091FF
 }
 
 main {
@@ -26,107 +27,152 @@ main {
 
 nav main {
   padding-top: 15px;
-  text-align: center;
+  text-align: right;
 }
 
 nav main a {
   text-align: center;
   text-decoration: none;
   color: white;
-  font-family: 'Roboto Slab', serif;
+  font-family: 'Playfair Display', serif;
   padding-top: 10px;
-  padding-right: 30px;
-  color: #EDF263
+  padding-right: 10px;
+  color: #FFCD00;
 }
 
 nav main a:hover {
   text-decoration: underline;
-  color: yellow;
+  color: #FFFFFF;
 }
 
 section {
-  text-align: center;
   width: 100%;
   height: 100vh;
-  position: relative;
+  position: absolute;
 }
 
 section.full {
-  background-image: url('../image/bg1.jpg');
+  background-image: url('../image/2.jpg');
   background-size: cover;
-  background-position: top left;
+  background-position: center center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 section.fulll {
-  background-image: url('../image/green1.jpg');
+  background-image: url('../image/4.jpg');
   background-size: cover;
-  background-position: top left;
+  background-position: center center;
   background-repeat: no-repeat;
-  padding-top: 50px
+  background-attachment: fixed;
 }
 section.fullll {
-  background-image: url('../image/green1.jpg');
+  background-image: url('../image/5.jpg');
   background-size: cover;
-  background-position: top left;
+  background-position: center center;
   background-repeat: no-repeat;
-  padding-top: 175px
+  background-attachment: fixed;
+}
+section.fulllll {
+  background-image: url('../image/7.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+section.fullllll {
+  background-image: url('../image/9.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
-section .left {
-  position: relative;
-  width: 40%;
-  height: 100%;
-  float: left;
-}
-
-section .right {
-  position: relative;
-  width: 60%;
-  height: 100%;
-  float: left;
-}
-
-section .melayang {
+section .intro {
   position: absolute;
-  top: 300px;
+  top: 80px;
   left: 50px;
   width: 40%;
   height: 200px;
-  /*background-color: pink;*/
+ 
 }
+
 /**/
+section .dua {
+  float: right;
+  position: absolute;
+  top: 150px;
+  left: 675px;
+  width: 40%;
+  height: 200px;
+  
+}
+
 
 h1 {
-  font-size: 120px;
-  font-family: 'Raleway', sans-serif;
-  color: #EDF263
+  text-align: left;
+  font-size: 70px;
+  font-family: 'Playfair Display', serif;
+  color: #FFCD00
+}
+h2 {
+  text-align: left;
+  font-size: 80px;
+  font-family: 'Playfair Display', serif; 
+  color: #FFCD00
 }
 h3 {
-  font-size: 30px;
-  font-family: 'Roboto Slab', serif;
-  color: #EDF263
+  margin-top: 20px;
+  font-size: 14px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color:#9AC1D9 ;
 }
+h4 {
+  margin-top: 100px;
+  text-align: left;
+  font-size: 80px;
+  font-family: 'Playfair Display', serif;
+  color: #FFCD00;
+}
+
 p {
+  padding-top: 10px;
+  padding-right: 30px;
+  text-align: justify;
 	font-size: 15px;
-  font-family: 'Raleway', sans-serif;
-  color: white
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #C3C3C3
+}
+i {
+  font-size: 18px;
+  font-family: 'Playfair Display', serif;
+  color: #9AC1D9
+ }
+ol {
+  padding-top: 10px;
+  padding-right: 30px;
+  text-align: justify;
+  font-size: 15px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #C3C3C3
+}
+li {
+  padding-top: 10px;
+  padding-right: 30px;
+  text-align: justify;
+  font-size: 15px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #C3C3C3
 }
 
-@media (max-width: 1024px) {
-  main {
-    width: 100vw;
+@media only screen and (max-width: 1024px) {
+  #body {
+    width: 100%
+    background-color: #000000; 
   }
-  
-  section .left, section .right {
-    width: 100%;
-    height: 50vh;
-  }
+}
 
-  
-  section .melayang {
-    top: 80%;
-    left: 20%;
-    width: 90%;
-  }
+@media only screen and (min-width: 1024px) {
+  body {
+    background-color: #000000; 
 }
