@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV Togu Stefanus</title>
+ 
+  <style>
+      *{
+          margin: 0;
+          padding: 0;
+      }
+  .box{
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+  font-family:'Gill Sans MT', sans-serif;
+  text-align: center;
+  text-justify: auto;
+}
+  .tab{
+      padding: 6px 9px;
+      border: 1px solid black;
+      border-top: none;
+      float: left;
+      font-family: monospace;
+}
+
+}
+  </style>
+</head>
+<body>
+  <div id="jon" class="box"> </div>
+
+  <div id="tab_satu" class="tab" onclick="ubahwarna('#85C1E9','tab_satu')">About</div>
+  <div id="tab_dua" class="tab" onclick="ubahwarna('#76D7C4','tab_dua')">Education</div>
+  <div id="tab_tiga" class="tab" onclick="ubahwarna('#138D75','tab_tiga')">Interest</div>
+</body>
+</html>
+<script>
+
+  function ubahwarna(x,y) {
+    var tulisan_tabsatu = "<h1> Hello </h1> Perkenalkan saya Togu Martahan Stefanus, yang biasa dipanggil dengan Togu. Sebagai graphic designer, memiliki kemampuan desain dan kreatif yang mumpuni, bekerja dalam tim, komitmen, hobi basket, gaming, dan fotografi adalah gambaran diri saya.";
+    var tulisan_tabdua = "<h1> Education </h1> <p>1998 - 2005 SD STRADA SLAMET RIYADI TANGERANG</p> <p>2005 - 2008 SMP STRADA SLAMET RIYADI TANGERANG </p> <p>2008 - 2011 SMA YAYASAN PERGURUAN MARKUS TANGERANG</p> <p>2016 - NOW UNIVERSITAS PELITA HARAPAN</p>";
+    var tulisan_tabtiga = "<h1> Interests </h1> <p>1. Playing Basketball</p> <p>2. Photography</p> <p>3. Listen to Music</p> <p>4. Playing FPS Games</p>";
+    document.querySelector('#jon').style.backgroundColor = x;
+    if (y == 'tab_satu'){
+        document.getElementById("jon").innerHTML = tulisan_tabsatu;
+        document.querySelector('#tab_satu').style.backgroundColor = 'grey';
+        document.querySelector('#tab_dua').style.backgroundColor = 'white';
+        document.querySelector('#tab_tiga').style.backgroundColor = 'white';
+    } else if(y=='tab_dua'){
+        document.getElementById("jon").innerHTML = tulisan_tabdua;
+        document.querySelector('#tab_satu').style.backgroundColor = 'white';
+        document.querySelector('#tab_dua').style.backgroundColor = 'gray';
+        document.querySelector('#tab_tiga').style.backgroundColor = 'white';
+    }else if(y=='tab_tiga'){
+      document.getElementById("jon").innerHTML = tulisan_tabtiga;
+      document.querySelector('#tab_satu').style.backgroundColor = 'white';
+      document.querySelector('#tab_dua').style.backgroundColor = 'white';
+      document.querySelector('#tab_tiga').style.backgroundColor = 'gray';
+    }
+}
+</script>
